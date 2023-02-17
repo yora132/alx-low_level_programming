@@ -7,20 +7,22 @@
  */
 int main(void)
 {
-	int a;
+	int i, j;
 
-	for (a = 0; a < 100; a++)
+	for (i = 0; i < 10; i++)
 	{
-		putchar(a + '0');
-		if (a < 10)
+		for (j = i + 1; j < 10; j++)
 		{
-			putchar('0');
-		}
-		if (a != 99)
-		{
+			putchar(i + '0');
+			putchar(j + '0');
+
+			if (i < 8)
+			{
 			putchar(',');
 			putchar(' ');
+			}
 		}
+
 	}
 	putchar('\n');
 	return (0);
