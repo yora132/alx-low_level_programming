@@ -4,7 +4,7 @@
 main:	mov	rax, 1
 	mov	rdi, 1
 	mov	rsi, msg
-	mov	rdx, 13
+	mov	rdx, msglen
 	syscall
 	mov	rax, 60
 	xor	rdi, rdi
@@ -12,3 +12,4 @@ main:	mov	rax, 1
 
 	section	.data
 msg:	db	"Hello, Holberton", 10
+msglen:	equ $ -	msg
