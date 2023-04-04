@@ -4,7 +4,7 @@
  * pop_listint - delete the first element in list
  * @head:double pointer
  *
- *Return:head node's data
+ * Return:head node's data
  */
 
 
@@ -14,7 +14,7 @@ int pop_listint(listint_t **head)
 	int n;
 
 	if (head == NULL)
-	{ 
+	{
 		return (0);
 	}
 	else
