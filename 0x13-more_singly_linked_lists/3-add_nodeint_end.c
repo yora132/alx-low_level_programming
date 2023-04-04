@@ -15,28 +15,25 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	{
 		return (NULL);
 	}
-	else
-	{
 	new = malloc(sizeof(listint_t));
-		if (new == NULL)
-		{
-			return (NULL);
-		}
-		else
-		{
-		new->n = n;
-		new->next = NULL;
-		}
+	if (new == NULL)
+	{
+		return (NULL);
+	}
+	new->n = n;
+	new->next = NULL;
+
+	if (*head == NULL)
+	{
+		*head = new;
+		return (new);
+	}
 	tempo = *head;
 
-	while (tempo->next)
+	while (tempo->next != NULL)
 	{
 		tempo = tempo->next;
 	}
 	tempo->next = new;
 	return (new);
-	}
 }
-
-			
-
