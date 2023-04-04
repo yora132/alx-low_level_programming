@@ -13,9 +13,9 @@ int pop_listint(listint_t **head)
 	listint_t *tempo;
 	int n;
 
-	if (head ==NULL)
+	if (head == NULL)
 	{ 
-		return;
+		return (0);
 	}
 	else
 	{
