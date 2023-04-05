@@ -12,9 +12,10 @@ size_t print_listint_safe(const listint_t *head)
 	long int difference;
 	size_t count = 0;
 
-	while (head != NULL)
+	while (head)
 	{
 		difference = head - head->next;
+
 		count++;
 		printf("[%p] %d\n", (void *)head, head->n);
 
