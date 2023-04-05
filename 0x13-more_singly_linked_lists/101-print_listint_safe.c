@@ -4,7 +4,7 @@
  * print_listint_safe - print elements of the list
  * @head:the head of the list
  *
- * Retuen:the number of nodes
+ * Return: the number of nodes in list
  */
 
 size_t print_listint_safe(const listint_t *head)
@@ -25,7 +25,7 @@ size_t print_listint_safe(const listint_t *head)
 		}
 		else
 		{
-			printf("[%p] %d\n", (void *)head->next, head->next->n);
+			printf("-> [%p] %d\n", (void *)head->next, head->next->n);
 			break;
 		}
 	}
