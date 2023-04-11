@@ -2,6 +2,9 @@
 #define MAIN_H
 
 
+#define BUF_SIZE 1024
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/types.h>
